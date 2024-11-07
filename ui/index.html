@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/1.css">
+    <title>Neural Network</title>
+</head>
+
+<body>
+    <div class="container">
+        <span>
+            <div class="div1">input</div>
+            <canvas id="canvas1"></canvas>
+            <div>
+                <button onclick="clear_canvas()">
+                    clear
+                </button>
+                <button onclick="undo()" disabled style="cursor: not-allowed;" id="undo">
+                    undo
+                </button>
+                <button onclick="ccconfirm()">
+                    确定
+                </button>
+            </div>
+        </span>
+        <span>
+            <div class="div2">grid</div>
+            <canvas id="canvas2"></canvas>
+        </span>
+    </div>
+    <div class="blank2"></div>
+    <div class="input_area">
+        <span class="radio_choice">
+            <input type="radio" name="n" value="1" checked="true">
+            <div>
+                <input type="text" id="text1" placeholder="未命名1">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="2">
+            <div>
+                <input type="text" id="text2" placeholder="未命名2">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="3">
+            <div>
+                <input type="text" id="text3" placeholder="未命名3">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="4">
+            <div>
+                <input type="text" id="text4" placeholder="未命名4">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="5">
+            <div>
+                <input type="text" id="text5" placeholder="未命名5">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="6">
+            <div>
+                <input type="text" id="text6" placeholder="未命名6">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="7">
+            <div>
+                <input type="text" id="text7" placeholder="未命名7">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="8">
+            <div>
+                <input type="text" id="text8" placeholder="未命名8">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="9">
+            <div>
+                <input type="text" id="text9" placeholder="未命名9">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="10">
+            <div>
+                <input type="text" id="text10" placeholder="未命名10">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="11">
+            <div>
+                <input type="text" id="text11" placeholder="未命名11">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="12">
+            <div>
+                <input type="text" id="text12" placeholder="未命名12">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="13">
+            <div>
+                <input type="text" id="text13" placeholder="未命名13">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="14">
+            <div>
+                <input type="text" id="text14" placeholder="未命名14">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="15">
+            <div>
+                <input type="text" id="text15" placeholder="未命名15">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="16">
+            <div>
+                <input type="text" id="text16" placeholder="未命名16">
+            </div>
+        </span><span class="radio_choice">
+            <input type="radio" name="n" value="17">
+            <div>
+                <input type="text" id="text17" placeholder="未命名17">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="18">
+            <div>
+                <input type="text" id="text18" placeholder="未命名18">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="19">
+            <div>
+                <input type="text" id="text19" placeholder="未命名19">
+            </div>
+        </span>
+        <span class="radio_choice">
+            <input type="radio" name="n" value="20">
+            <div>
+                <input type="text" id="text20" placeholder="未命名20">
+            </div>
+        </span>
+    </div>
+    <div class="mode_selection">
+        <span>
+            <span>训练</span>
+            <input type="radio" name="mode" value="train" checked onclick="ccchmode('train')">
+        </span>
+        <span class="blank3"></span>
+        <span>
+            <span>识别</span>
+            <input type="radio" name="mode" value="recognition" onclick="ccchmode('recognition')">
+        </span>
+        <span class="blank3"></span>
+        <button id="downloadBtn">export data</button>
+    </div>
+    <div class="data_list">
+        <div id="data_num">
+
+        </div>
+        <div id="data">
+
+        </div>
+    </div>
+</body>
+<script src="./js/1.js"></script>
+
+</html>

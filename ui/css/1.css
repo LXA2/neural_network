@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 243, 255);
+    user-select: none;
+}
+#canvas1{
+    margin-top: 10px;
+    margin-left: 25px;
+    background-color: rgba(13, 13, 13, 0.127);
+}
+.div1{
+    width: fit-content;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.div2{
+    width: fit-content;
+    text-align: left;
+    margin-top: 27px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#canvas2{
+    margin-top: 10px;
+    margin-right: 25px;
+    background-color: rgba(13, 13, 13, 0.127);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    font-size: 2rem;
+    margin-left: 25px;
+}
+
+.blank2{
+    margin-top: 3rem;
+}
+
+.input_area {
+    margin-top: 3rem;
+    margin: auto;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.117);
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.radio_choice {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(95vw / 10 - 10px); /* 计算每个 span 的宽度，使得一行大约能放置 10 个 */
+    margin-bottom: 10px;
+}
+
+.radio_choice input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px; /* 保持 radio 和 text input 之间的间距 */
+}
+.radio_choice input[type="text"] {
+    font-size: 1.1rem;
+    width: 5rem; /* 保持 radio 和 text input 之间的间距 */
+}
+
+.radio_choice div {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* 确保 text input 居中 */
+}
+
+.blank3{
+    width: 1rem;
+    margin-left: 2rem;
+}
+.mode_selection{
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.168);
+}
+.mode_selection>span{
+    margin-left: 2rem;
+}
+
+.mode_selection input[type="radio"] {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.data_list{
+    width: 50%;
+    margin: auto;
+    background-color: azure;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+#data_num{
+    font-size: 2rem;
+    text-align: center;
+    background-color: aqua;
+}
