@@ -2,6 +2,7 @@ var matrix = [], matrix_false = [];
 var data = [];
 var mode = "train";
 const matrix_width_and_height = 30;
+var input_types = 20;
 for (let i = 0; i < matrix_width_and_height; i++) {
     var tmp_group = [];
     for (let i1 = 0; i1 < matrix_width_and_height; i1++) {

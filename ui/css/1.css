@@ -113,3 +113,19 @@ button {
     text-align: center;
     background-color: aqua;
 }
+.a_s{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 5rem;
+    margin-left: 5vw;
+}
+.btn_a_s{
+    width: 6rem;
+    height: 4rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+}
+.btn_a_s:hover{
+    background-color: rgba(0, 0, 0, 0.19);
+}
